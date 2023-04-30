@@ -1,8 +1,11 @@
-from aiogram import Dispatcher
+from .text import vip
+from .callback import vip
+from .commands import vip
+from .states import vip
+from .admin_sending import vip
+from .buttons import vip
+from .service import vip
+from .qiwi import vip
+from .activate import vip
 
-from loader import vip
-from .throttling import ThrottlingMiddleware
-
-
-if __name__ == "middlewares":
-    vip.middleware.setup(ThrottlingMiddleware())
+__all__ = ["vip"]
